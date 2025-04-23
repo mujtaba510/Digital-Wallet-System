@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Items - Digital Wallet</title>
+    
+    <!-- Bootstrap and Fonts -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!-- External Variables -->
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="Dashboard.html"> Digital Wallet </a>
+          <i class="dark-mode-toggle bi bi-moon-fill"></i>
+        </div>
+    </nav>
+
+    <div class="container mt-5 mb-5" style="max-width: 700px;">
+        <h1>Select a Product Category</h1>
+
+        <!-- Dropdown for selecting category -->
+        <select id="categorySelect" class="form-select mb-4 p-3" onchange="loadProducts()">
+            <option value="">Choose Category</option>
+            <option value="clothing">Clothing</option>
+            <option value="food">Food</option>
+            <option value="movies">Movie Tickets</option>
+        </select>
+
+        <!-- Display wallet balance -->
+        <div class="alert alert-primary" id="walletBalanceAlert">
+            Your current wallet balance is: <span id="walletBalance"></span> Rs.
+        </div>
+
+        <!-- Product list -->
+        <div class="row" id="productList">
+            <!-- Products will be loaded here -->
+        </div>
+    </div>
+
+    <script src="Purchase.js"></script>
+    <script src="Dark-Light-Mode.js"></script>
+</body>
+</html>

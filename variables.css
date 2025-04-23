@@ -1,0 +1,13 @@
+:root {
+    --primary-color: #007bff;
+    --hover-color: black;
+    --secondary-color: #343a40;
+    --light-background: #f8f9fa;
+    --card-shadow-color: rgba(0, 0, 0, 0.4);
+    --font-family: 'Poppins', sans-serif;
+    --navbar-bg-color: #f8f9fa;
+    --icon-color: black; 
+    --label-color: black;
+    --card-bg-color: #fff;
+    --card-subtitle-color: rgba(0,0,0,0.6);
+}
